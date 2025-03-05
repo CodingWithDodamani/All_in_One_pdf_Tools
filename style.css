@@ -1528,6 +1528,32 @@ footer {
   padding: 1.5rem;
   font-size: 0.9rem;
 }
+.ad-container {
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  background: rgba(225, 228, 232, 0.2);
+  border-radius: 8px;
+}
+
+.header-ad {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-ad {
+  margin: 3rem auto;
+}
+
+.tools-ad {
+  margin: 2rem 0;
+  padding: 1.5rem;
+}
+
+.footer-ad {
+  margin-top: 3rem;
+}
+
 
 /* Enhanced Tool Card Styles */
 .tool-icon {
