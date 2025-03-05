@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free online image compression tool with additional features like PDF conversion and image cropping">
+  <meta name="keywords" content="image compression, image to PDF, crop image, image optimization, image tools">
+  <title>PixelPro Tools - Image Compression, PDF Conversion & More</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-image"></i>
+        <h1>PixelPro</h1>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home" class="active nav-item" data-page="home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#tools" class="nav-item" data-page="tools"><i class="fas fa-tools"></i> Tools</a></li>
+        <li><a href="#about" class="nav-item" data-page="about"><i class="fas fa-info-circle"></i> About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="page-container">
+    <!-- Home Page -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Transform Your Images with <span class="highlight">PixelPro</span></h1>
+          <p>Free online tools to compress, convert, and edit your images professionally</p>
+          <a href="#tools" class="cta-button" id="explore-tools-btn">Explore Tools <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-image">
+          <img src="https://cdn-icons-png.flaticon.com/512/3588/3588658.png" alt="Image tools illustration">
+        </div>
+      </div>
+
+      <div class="features">
+        <h2>What We Offer</h2>
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-compress-alt"></i>
+            </div>
+            <h3>Image Compression</h3>
+            <p>Reduce file size while maintaining quality</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-crop-alt"></i>
+            </div>
+            <h3>Image Crop</h3>
+            <p>Precisely crop and resize your images</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <h3>PDF Conversion</h3>
+            <p>Convert images to PDF documents easily</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <h2>Why Users Love Us</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial">
+            <div class="quote">
+              <i class="fas fa-quote-left"></i>
+              <p>"This tool saved me hours of work! The compression quality is amazing."</p>
+            </div>
+            <div class="author">- Sarah J., Photographer</div>
+          </div>
+          <div class="testimonial">
+            <div class="quote">
+              <i class="fas fa-quote-left"></i>
+              <p>"The PDF conversion feature is exactly what I needed for my project documentation."</p>
+            </div>
+            <div class="author">- Mark T., Project Manager</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Page -->
+    <section id="tools" class="page">
+      <div class="tools-header">
+        <h1>Digital Tools Hub</h1>
+        <p>All-in-one solution for your document and image needs</p>
+      </div>
+
+      <!-- Tool Categories -->
+      <div class="tool-categories">
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="image-tools">
+            <i class="fas fa-image"></i> Image Tools
+          </button>
+          <button class="category-tab" data-category="pdf-tools">
+            <i class="fas fa-file-pdf"></i> PDF Tools
+          </button>
+          <button class="category-tab" data-category="file-tools">
+            <i class="fas fa-file-alt"></i> File Tools
+          </button>
+        </div>
+      </div>
+
+      <!-- Image Tools Section -->
+      <div class="category-section active" id="image-tools">
+        <div class="category-title">
+          <h2><i class="fas fa-image"></i> Image Tools</h2>
+          <p>Powerful tools to enhance, convert and optimize your images</p>
+        </div>
+
+        <div class="tools-grid">
+          <div class="tool-card" data-tool="compression">
+            <div class="tool-icon">
+              <i class="fas fa-compress-alt"></i>
+            </div>
+            <h3>Image Compression</h3>
+            <p>Reduce file size while maintaining quality</p>
+            <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="tool-card" data-tool="crop">
+            <div class="tool-icon">
+              <i class="fas fa-crop-alt"></i>
+            </div>
+            <h3>Image Crop</h3>
+            <p>Precisely crop and resize your images</p>
+            <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="tool-card" data-tool="to-pdf">
+            <div class="tool-icon">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <h3>Image to PDF</h3>
+            <p>Convert images to PDF documents</p>
+            <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="tool-card" data-tool="img-resize">
+            <div class="tool-icon">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </div>
+            <h3>Resize Image</h3>
+            <p>Change image dimensions easily</p>
+            <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="tool-card" data-tool="img-filter">
+            <div class="tool-icon">
+              <i class="fas fa-adjust"></i>
+            </div>
+            <h3>Image Filters</h3>
+            <p>Apply stunning filters to your images</p>
+            <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="tool-card" data-tool="img-converter">
+            <div class="tool-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <h3>Image Converter</h3>
+            <p>Convert between image formats</p>
+            <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PDF Tools Section -->
+      <div class="category-section" id="pdf-tools">
+        <div class="category-title">
+          <h2><i class="fas fa-file-pdf"></i> PDF Tools</h2>
+          <p>Complete suite of PDF manipulation tools</p>
+        </div>
+
+        <!-- 1. Convert to PDF Tools Category -->
+        <div class="pdf-category">
+          <h3><i class="fas fa-file-export"></i> Convert to PDF</h3>
+          <div class="category-description">
+            <p>Transform your documents and images into professional PDF format</p>
+          </div>
+          <div class="tools-grid">
+            <div class="tool-card" data-tool="word-to-pdf">
+              <div class="tool-icon">
+                <i class="fas fa-file-word"></i>
+              </div>
+              <h3>Word to PDF</h3>
+              <p>Convert Word documents to PDF format</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="excel-to-pdf">
+              <div class="tool-icon">
+                <i class="fas fa-file-excel"></i>
+              </div>
+              <h3>Excel to PDF</h3>
+              <p>Convert spreadsheets to PDF format</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="ppt-to-pdf">
+              <div class="tool-icon">
+                <i class="fas fa-file-powerpoint"></i>
+              </div>
+              <h3>PowerPoint to PDF</h3>
+              <p>Convert presentations to PDF format</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="jpg-to-pdf">
+              <div class="tool-icon">
+                <i class="fas fa-file-image"></i>
+              </div>
+              <h3>JPG to PDF</h3>
+              <p>Convert JPG images to PDF format</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="image-to-pdf">
+              <div class="tool-icon">
+                <i class="fas fa-images"></i>
+              </div>
+              <h3>Image to PDF</h3>
+              <p>Convert multiple images to PDF document</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="text-to-pdf">
+              <div class="tool-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <h3>Text to PDF</h3>
+              <p>Convert plain text to PDF format</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Convert from PDF Tools Category -->
+        <div class="pdf-category">
+          <h3><i class="fas fa-file-import"></i> Convert from PDF</h3>
+          <div class="category-description">
+            <p>Extract and transform PDF content into editable formats</p>
+          </div>
+          <div class="tools-grid">
+            <div class="tool-card" data-tool="pdf-to-word">
+              <div class="tool-icon">
+                <i class="fas fa-file-word"></i>
+              </div>
+              <h3>PDF to Word</h3>
+              <p>Convert PDF to editable Word document</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-excel">
+              <div class="tool-icon">
+                <i class="fas fa-file-excel"></i>
+              </div>
+              <h3>PDF to Excel</h3>
+              <p>Convert PDF to editable spreadsheet</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-ppt">
+              <div class="tool-icon">
+                <i class="fas fa-file-powerpoint"></i>
+              </div>
+              <h3>PDF to PowerPoint</h3>
+              <p>Convert PDF to editable presentations</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-jpg">
+              <div class="tool-icon">
+                <i class="fas fa-file-image"></i>
+              </div>
+              <h3>PDF to JPG</h3>
+              <p>Convert PDF pages to JPG format</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-image">
+              <div class="tool-icon">
+                <i class="fas fa-file-export"></i>
+              </div>
+              <h3>PDF to Image</h3>
+              <p>Convert PDF pages to various image formats</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-text">
+              <div class="tool-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <h3>PDF to Text</h3>
+              <p>Extract text content from PDF documents</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Organize PDF Tools Category -->
+        <div class="pdf-category">
+          <h3><i class="fas fa-object-group"></i> Organize PDF</h3>
+          <div class="category-description">
+            <p>Rearrange, combine, and structure your PDF documents efficiently</p>
+          </div>
+          <div class="tools-grid">
+            <div class="tool-card" data-tool="pdf-merge">
+              <div class="tool-icon">
+                <i class="fas fa-object-group"></i>
+              </div>
+              <h3>Merge PDF</h3>
+              <p>Combine multiple PDFs into one document</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-split">
+              <div class="tool-icon">
+                <i class="fas fa-cut"></i>
+              </div>
+              <h3>Split PDF</h3>
+              <p>Divide PDF into separate documents</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-rotate">
+              <div class="tool-icon">
+                <i class="fas fa-redo"></i>
+              </div>
+              <h3>Rotate PDF</h3>
+              <p>Change page orientation in your PDF</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-remove-pages">
+              <div class="tool-icon">
+                <i class="fas fa-minus-square"></i>
+              </div>
+              <h3>Delete PDF Pages</h3>
+              <p>Remove specific pages from your PDF</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-extract">
+              <div class="tool-icon">
+                <i class="fas fa-copy"></i>
+              </div>
+              <h3>Extract PDF Pages</h3>
+              <p>Save specific pages as a new PDF</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-organize">
+              <div class="tool-icon">
+                <i class="fas fa-sort"></i>
+              </div>
+              <h3>Reorder Pages</h3>
+              <p>Rearrange pages in your PDF document</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Categories -->
+        <div class="pdf-category">
+          <h3><i class="fas fa-edit"></i> Edit PDF</h3>
+          <div class="category-description">
+            <p>Customize and enhance your PDF documents</p>
+          </div>
+          <div class="tools-grid">
+            <div class="tool-card" data-tool="pdf-crop">
+              <div class="tool-icon">
+                <i class="fas fa-crop"></i>
+              </div>
+              <h3>Crop PDF Page</h3>
+              <p>Adjust page dimensions in your PDF</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-watermark">
+              <div class="tool-icon">
+                <i class="fas fa-tint"></i>
+              </div>
+              <h3>Add Watermark</h3>
+              <p>Apply text or image watermarks to PDF</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-page-numbers">
+              <div class="tool-icon">
+                <i class="fas fa-list-ol"></i>
+              </div>
+              <h3>Add Page Numbers</h3>
+              <p>Add customizable page numbers to PDF</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-extract-images">
+              <div class="tool-icon">
+                <i class="fas fa-images"></i>
+              </div>
+              <h3>Extract Images</h3>
+              <p>Extract all images from a PDF document</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pdf-category">
+          <h3><i class="fas fa-compress"></i> Optimize PDF</h3>
+          <div class="category-description">
+            <p>Reduce file size and improve PDF performance</p>
+          </div>
+          <div class="tools-grid">
+            <div class="tool-card" data-tool="pdf-compress">
+              <div class="tool-icon">
+                <i class="fas fa-compress-arrows-alt"></i>
+              </div>
+              <h3>Compress PDF</h3>
+              <p>Reduce PDF file size while preserving quality</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pdf-category">
+          <h3><i class="fas fa-shield-alt"></i> PDF Security</h3>
+          <div class="category-description">
+            <p>Protect and secure your PDF documents</p>
+          </div>
+          <div class="tools-grid">
+            <div class="tool-card" data-tool="pdf-unlock">
+              <div class="tool-icon">
+                <i class="fas fa-unlock"></i>
+              </div>
+              <h3>Unlock PDF</h3>
+              <p>Remove password protection from PDF</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="tool-card" data-tool="pdf-protect">
+              <div class="tool-icon">
+                <i class="fas fa-lock"></i>
+              </div>
+              <h3>Protect PDF</h3>
+              <p>Add password protection to PDF documents</p>
+              <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- File Tools Section -->
+      <div class="category-section" id="file-tools">
+        <div class="category-title">
+          <h2><i class="fas fa-file-alt"></i> File Tools</h2>
+          <p>Convert and manipulate your files with ease</p>
+        </div>
+
+        <div class="tools-grid">
+          <div class="tool-card" data-tool="file-compress">
+            <div class="tool-icon">
+              <i class="fas fa-file-archive"></i>
+            </div>
+            <h3>File Compression</h3>
+            <p>Compress multiple files into ZIP format</p>
+            <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="tool-card" data-tool="file-converter">
+            <div class="tool-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <h3>File Converter</h3>
+            <p>Convert between various file formats</p>
+            <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="tool-card" data-tool="file-merger">
+            <div class="tool-icon">
+              <i class="fas fa-object-group"></i>
+            </div>
+            <h3>File Merger</h3>
+            <p>Combine multiple files into one</p>
+            <button class="tool-select-btn">Select <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools Container for the actual tools -->
+      <div class="tools-container">
+        <nav>
+          <ul class="tabs">
+            <li class="tab active" data-tab="compression">Image Compression</li>
+            <li class="tab" data-tab="crop">Image Crop</li>
+            <li class="tab" data-tab="to-pdf">Image to PDF</li>
+            <li class="tab" data-tab="jpg-to-pdf">JPG to PDF</li>
+            <li class="tab" data-tab="word-to-pdf">Word to PDF</li>
+            <li class="tab" data-tab="img-resize">Resize Image</li>
+            <li class="tab" data-tab="img-filter">Image Filters</li>
+            <li class="tab" data-tab="img-converter">Image Converter</li>
+            <li class="tab" data-tab="pdf-protect">Protect PDF</li>
+            <li class="tab" data-tab="pdf-unlock">Unlock PDF</li>
+          </ul>
+        </nav>
+
+        <main>
+          <!-- Image Compression Tool -->
+          <section id="compression" class="tool-section active">
+            <div class="tool-container">
+              <h2>Image Compression</h2>
+              <div class="tool-description">
+                <div class="info-box">
+                  <i class="fas fa-info-circle"></i>
+                  <p>Reduce your image file size while maintaining visual quality. Perfect for websites, emails, and social media.</p>
+                </div>
+              </div>
+              <div class="upload-container">
+                <label for="compression-upload" class="upload-area">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Drop your image here or click to browse</p>
+                  <input type="file" id="compression-upload" accept="image/*" hidden>
+                </label>
+              </div>
+
+              <div class="settings">
+                <div class="setting">
+                  <label for="quality">Compression Level:</label>
+                  <input type="range" id="quality" min="1" max="100" value="80">
+                  <span id="quality-value">80%</span>
+                </div>
+                <div class="file-info" id="compression-info">
+                  <p>Original size: <span id="original-size">-</span></p>
+                  <p>New size: <span id="new-size">-</span></p>
+                  <p>Reduction: <span id="reduction">-</span></p>
+                </div>
+              </div>
+
+              <div class="preview-container">
+                <div class="preview-box">
+                  <h3>Original</h3>
+                  <div id="original-preview" class="preview"></div>
+                </div>
+                <div class="preview-box">
+                  <h3>Compressed</h3>
+                  <div id="compressed-preview" class="preview"></div>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button id="compress-btn" class="action-btn" disabled>Compress Image</button>
+                <button id="download-compressed" class="action-btn secondary" disabled>Download</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Image Crop Tool -->
+          <section id="crop" class="tool-section">
+            <div class="tool-container">
+              <h2>Image Crop</h2>
+              <div class="tool-description">
+                <div class="info-box">
+                  <i class="fas fa-info-circle"></i>
+                  <p>Easily crop your images to perfect dimensions. Adjust, preview, and download in seconds.</p>
+                </div>
+              </div>
+              <div class="upload-container">
+                <label for="crop-upload" class="upload-area">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Drop your image here or click to browse</p>
+                  <input type="file" id="crop-upload" accept="image/*" hidden>
+                </label>
+              </div>
+
+              <div class="crop-container">
+                <div id="crop-preview"></div>
+              </div>
+
+              <div class="crop-controls">
+                <div class="crop-aspect-ratio">
+                  <label>Aspect Ratio:</label>
+                  <div class="aspect-buttons">
+                    <button class="aspect-btn" data-ratio="NaN">Free</button>
+                    <button class="aspect-btn" data-ratio="1">1:1</button>
+                    <button class="aspect-btn" data-ratio="1.7778">16:9</button>
+                    <button class="aspect-btn" data-ratio="0.6666">2:3</button>
+                    <button class="aspect-btn" data-ratio="0.75">3:4</button>
+                  </div>
+                </div>
+                <div class="action-buttons">
+                  <button id="crop-btn" class="action-btn" disabled>Crop Image</button>
+                  <button id="download-cropped" class="action-btn secondary" disabled>Download</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Image to PDF Tool -->
+          <section id="to-pdf" class="tool-section">
+            <div class="tool-container">
+              <h2>Image to PDF</h2>
+              <div class="tool-description">
+                <div class="info-box">
+                  <i class="fas fa-info-circle"></i>
+                  <p>Convert your images to PDF format in seconds. Perfect for creating documents, reports, and portfolios.</p>
+                </div>
+              </div>
+              <div class="upload-container">
+                <label for="pdf-upload" class="upload-area">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Drop your images here or click to browse (select multiple files)</p>
+                  <input type="file" id="pdf-upload" accept="image/*" multiple hidden>
+                </label>
+              </div>
+
+              <div id="pdf-images-list" class="images-list">
+                <!-- Image items will be added here -->
+              </div>
+
+              <div class="pdf-settings">
+                <div class="setting">
+                  <label for="pdf-orientation">Page Orientation:</label>
+                  <select id="pdf-orientation">
+                    <option value="portrait">Portrait</option>
+                    <option value="landscape">Landscape</option>
+                  </select>
+                </div>
+                <div class="setting">
+                  <label for="pdf-size">Page Size:</label>
+                  <select id="pdf-size">
+                    <option value="a4">A4</option>
+                    <option value="letter">Letter</option>
+                    <option value="legal">Legal</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button id="create-pdf-btn" class="action-btn" disabled>Create PDF</button>
+                <button id="download-all-btn" class="action-btn secondary" disabled>Download All</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- JPG to PDF Tool -->
+          <section id="jpg-to-pdf" class="tool-section">
+            <div class="tool-container">
+              <h2>JPG to PDF Converter</h2>
+              <div class="tool-description">
+                <div class="info-box">
+                  <i class="fas fa-info-circle"></i>
+                  <p>Convert JPG images to professional PDF documents with just a few clicks. Perfect for creating reports, portfolios, and archives.</p>
+                </div>
+              </div>
+              <div class="upload-container">
+                <label for="jpg-pdf-upload" class="upload-area">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Drop your JPG images here or click to browse</p>
+                  <input type="file" id="jpg-pdf-upload" accept=".jpg,.jpeg" multiple hidden>
+                </label>
+              </div>
+
+              <div id="jpg-images-list" class="images-list">
+                <!-- JPG images will be listed here -->
+              </div>
+
+              <div class="pdf-options">
+                <h3><i class="fas fa-cog"></i> PDF Options</h3>
+                <div class="options-grid">
+                  <div class="option-card">
+                    <div class="option-icon">
+                      <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="option-details">
+                      <h4>Page Size</h4>
+                      <select id="jpg-pdf-size">
+                        <option value="a4">A4 (210 × 297 mm)</option>
+                        <option value="letter">US Letter (215.9 × 279.4 mm)</option>
+                        <option value="legal">Legal (215.9 × 355.6 mm)</option>
+                        <option value="a3">A3 (297 × 420 mm)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="option-card">
+                    <div class="option-icon">
+                      <i class="fas fa-arrows-alt"></i>
+                    </div>
+                    <div class="option-details">
+                      <h4>Orientation</h4>
+                      <div class="radio-options">
+                        <label>
+                          <input type="radio" name="jpg-orientation" value="portrait" checked>
+                          <span>Portrait</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="jpg-orientation" value="landscape">
+                          <span>Landscape</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option-card">
+                    <div class="option-icon">
+                      <i class="fas fa-border-all"></i>
+                    </div>
+                    <div class="option-details">
+                      <h4>Margin</h4>
+                      <select id="jpg-pdf-margin">
+                        <option value="0">None</option>
+                        <option value="10" selected>Small</option>
+                        <option value="20">Medium</option>
+                        <option value="30">Large</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="option-card">
+                    <div class="option-icon">
+                      <i class="fas fa-image"></i>
+                    </div>
+                    <div class="option-details">
+                      <h4>Image Quality</h4>
+                      <div class="range-slider-container">
+                        <input type="range" id="jpg-quality-slider" min="60" max="100" value="90">
+                        <span id="jpg-quality-value">90%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button id="jpg-to-pdf-btn" class="action-btn" disabled>Create PDF</button>
+                <button id="jpg-pdf-preview-btn" class="action-btn secondary" disabled>Preview</button>
+              </div>
+
+              <div id="jpg-pdf-preview-container" class="preview-container" style="display:none;">
+                <h3>Preview</h3>
+                <div id="jpg-pdf-preview" class="pdf-preview"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Word to PDF Tool -->
+          <section id="word-to-pdf" class="tool-section">
+            <div class="tool-container">
+              <h2>Word to PDF Converter</h2>
+              <div class="tool-description">
+                <div class="info-box">
+                  <i class="fas fa-info-circle"></i>
+                  <p>Convert Microsoft Word documents to PDF format. Preserve formatting and create professional PDFs from your .doc and .docx files.</p>
+                </div>
+              </div>
+              <div class="upload-container">
+                <label for="word-pdf-upload" class="upload-area">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Drop your Word document here or click to browse</p>
+                  <input type="file" id="word-pdf-upload" accept=".doc,.docx" hidden>
+                </label>
+              </div>
+
+              <div class="file-info" id="word-file-info" style="display:none;">
+                <div class="file-preview">
+                  <i class="fas fa-file-word file-icon"></i>
+                  <div class="file-details">
+                    <h4 id="word-filename">document.docx</h4>
+                    <p id="word-filesize">Size: 0 KB</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button id="word-to-pdf-btn" class="action-btn" disabled>Convert to PDF</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Image Resize Tool -->
+          <section id="img-resize" class="tool-section">
+            <div class="tool-container">
+              <h2>Resize Image</h2>
+              <div class="tool-description">
+                <div class="info-box">
+                  <i class="fas fa-info-circle"></i>
+                  <p>Resize your images with precision. Change dimensions while maintaining aspect ratio or set custom sizes.</p>
+                </div>
+              </div>
+              <div class="upload-container">
+                <label for="resize-upload" class="upload-area">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Drop your image here or click to browse</p>
+                  <input type="file" id="resize-upload" accept="image/*" hidden>
+                </label>
+              </div>
+
+              <div id="resize-preview-container" style="display:none;" class="preview-container">
+                <div class="preview-box">
+                  <h3>Original Image</h3>
+                  <div id="resize-original-preview" class="preview"></div>
+                </div>
+              </div>
+
+              <div id="resize-settings" class="settings" style="display:none;">
+                <div class="setting">
+                  <label for="width-input">Width (px):</label>
+                  <input type="number" id="width-input" min="1" max="5000" placeholder="Width">
+                </div>
+                <div class="setting">
+                  <label for="height-input">Height (px):</label>
+                  <input type="number" id="height-input" min="1" max="5000" placeholder="Height">
+                </div>
+                <div class="setting">
+                  <label for="maintain-aspect-ratio">Maintain aspect ratio:</label>
+                  <input type="checkbox" id="maintain-aspect-ratio" checked>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button id="resize-btn" class="action-btn" disabled>Resize Image</button>
+                <button id="download-resized" class="action-btn secondary" disabled>Download</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Image Filters Tool -->
+          <section id="img-filter" class="tool-section">
+            <div class="tool-container">
+              <h2>Image Filters</h2>
+              <div class="tool-description">
+                <div class="info-box">
+                  <i class="fas fa-info-circle"></i>
+                  <p>Enhance your images with professional filters. Adjust brightness, contrast, saturation and more.</p>
+                </div>
+              </div>
+              <div class="upload-container">
+                <label for="filter-upload" class="upload-area">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Drop your image here or click to browse</p>
+                  <input type="file" id="filter-upload" accept="image/*" hidden>
+                </label>
+              </div>
+
+              <div id="filter-preview-container" style="display:none;" class="preview-container">
+                <div class="preview-box">
+                  <h3>Original</h3>
+                  <div id="filter-original-preview" class="preview"></div>
+                </div>
+                <div class="preview-box">
+                  <h3>Filtered</h3>
+                  <div id="filter-result-preview" class="preview"></div>
+                </div>
+              </div>
+
+              <div id="filter-controls" class="settings" style="display:none;">
+                <div class="setting">
+                  <label for="brightness">Brightness:</label>
+                  <input type="range" id="brightness" min="0" max="200" value="100">
+                  <span id="brightness-value">100%</span>
+                </div>
+                <div class="setting">
+                  <label for="contrast">Contrast:</label>
+                  <input type="range" id="contrast" min="0" max="200" value="100">
+                  <span id="contrast-value">100%</span>
+                </div>
+                <div class="setting">
+                  <label for="saturation">Saturation:</label>
+                  <input type="range" id="saturation" min="0" max="200" value="100">
+                  <span id="saturation-value">100%</span>
+                </div>
+                <div class="setting">
+                  <label for="filter-preset">Presets:</label>
+                  <select id="filter-preset">
+                    <option value="none">None</option>
+                    <option value="grayscale">Grayscale</option>
+                    <option value="sepia">Sepia</option>
+                    <option value="vintage">Vintage</option>
+                    <option value="cool">Cool</option>
+                    <option value="warm">Warm</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button id="apply-filter-btn" class="action-btn" disabled>Apply Filters</button>
+                <button id="download-filtered" class="action-btn secondary" disabled>Download</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Image Converter Tool -->
+          <section id="img-converter" class="tool-section">
+            <div class="tool-container">
+              <h2>Image Converter</h2>
+              <div class="tool-description">
+                <div class="info-box">
+                  <i class="fas fa-info-circle"></i>
+                  <p>Convert your images between different formats including JPG, PNG, WebP, and more.</p>
+                </div>
+              </div>
+              <div class="upload-container">
+                <label for="converter-upload" class="upload-area">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <p>Drop your image here or click to browse</p>
+                  <input type="file" id="converter-upload" accept="image/*" hidden>
+                </label>
+              </div>
+
+              <div id="converter-preview" class="file-info" style="display:none;">
+                <div class="file-preview">
+                  <i class="fas fa-file-image file-icon"></i>
+                  <div class="file-details">
+                    <h4 id="converter-filename">image.jpg</h4>
+                    <p id="converter-filesize">Size: 0 KB</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="converter-options" class="settings" style="display:none;">
+                <div class="setting">
+                  <label for="format-select">Convert to:</label>
+                  <select id="format-select">
+                    <option value="jpeg">JPEG</option>
+                    <option value="png">PNG</option>
+                    <option value="webp">WebP</option>
+                    <option value="gif">GIF</option>
+                  </select>
+                </div>
+                <div class="setting" id="quality-setting">
+                  <label for="format-quality">Quality:</label>
+                  <input type="range" id="format-quality" min="1" max="100" value="90">
+                  <span id="format-quality-value">90%</span>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button id="convert-btn" class="action-btn" disabled>Convert Image</button>
+                <button id="download-converted" class="action-btn secondary" disabled>Download</button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+      <div class="about-container">
+        <div class="about-header">
+          <h1>About PixelPro</h1>
+          <div class="about-intro">
+            <div class="about-image">
+              <img src="https://cdn-icons-png.flaticon.com/512/3073/3073412.png" alt="About PixelPro">
+            </div>
+            <div class="about-text">
+              <p>PixelPro is a free online platform that provides powerful image processing tools for everyone. Whether you're a professional designer, marketer, student, or just need to optimize images for personal use, our tools are designed to be both powerful and easy to use.</p>
+              <p>Our mission is to make professional image tools accessible to everyone without requiring specialized software or technical knowledge.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-features">
+          <h2>Why Choose PixelPro?</h2>
+          <div class="feature-list">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h3>100% Free</h3>
+                <p>All our tools are completely free to use, with no hidden fees or subscriptions.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-lock"></i>
+              <div>
+                <h3>Privacy First</h3>
+                <p>Your files never leave your browser. We don't store or access your images on our servers.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-bolt"></i>
+              <div>
+                <h3>Lightning Fast</h3>
+                <p>All processing happens in your browser for instant results with no waiting or uploading.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-mobile-alt"></i>
+              <div>
+                <h3>Mobile Friendly</h3>
+                <p>Our tools work perfectly on all devices, from smartphones to desktop computers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-team">
+          <h2>The Team</h2>
+          <p>PixelPro was created by a team of developers and designers passionate about making powerful image tools accessible to everyone.</p>
+          <p>Have suggestions or feedback? We'd love to hear from you!</p>
+          <a href="mailto:contact@pixelpro.example.com" class="contact-btn"><i class="fas fa-envelope"></i> Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-image"></i>
+        <h2>PixelPro</h2>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-tools">
+        <h3>Our Tools</h3>
+        <ul>
+          <li><a href="#tools" data-tool="compression">Image Compression</a></li>
+          <li><a href="#tools" data-tool="crop">Image Crop</a></li>
+          <li><a href="#tools" data-tool="to-pdf">Image to PDF</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2023 PixelPro Image Tools. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Load Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js" integrity="sha512-PovnT1BQYCJsV3Cqsozb9JpTTxijVHkRNPJ+Rlj3gR7lZG3C5UC1SpTCxF+9umR9JhsOZEMDU+gzOH0DwEJoqw==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js" integrity="sha512-6lplKUSl86rUVprDIjiKKsXLwqLuJaC4mKFBMREpS+3QQi+334LavMDaUCgRRVHpJ7ttSdPKfY1wR9nnR1jpQ==" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet" integrity="sha512-jO9KUHlvIF4MH/OTiio0aaueQrD38zlvFde9JoEA+AQaCNxIJoX4Kjse3sO2kqly84wc6aCtdm9BIUpYdgFzg==" crossorigin="anonymous">
+
+  <!-- Fallback for PDF library -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      // Check if PDF-lib loaded
+      if (typeof PDFLib === 'undefined') {
+        console.warn('PDF-lib failed to load from CDN, attempting to load from backup');
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js';
+        script.onerror = function() {
+          console.error('Failed to load PDF-lib from backup source');
+          alert('Failed to load necessary libraries. Please refresh the page or try again later.');
+        };
+        document.body.appendChild(script);
+      }
+
+      // Check if Cropper.js loaded
+      if (typeof Cropper === 'undefined') {
+        console.warn('Cropper.js failed to load from CDN, attempting to load from backup');
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.js';
+        script.onerror = function() {
+          console.error('Failed to load Cropper.js from backup source');
+          alert('Failed to load necessary libraries. Please refresh the page or try again later.');
+        };
+        document.body.appendChild(script);
+
+        // Also load the CSS
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.css';
+        document.head.appendChild(link);
+      }
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
